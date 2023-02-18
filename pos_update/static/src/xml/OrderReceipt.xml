@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="OrderReceiptUpdate" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="primary" owl="1">
+        <xpath expr="//t[@t-if='receipt.company.logo']" position="before">
+            <center><h3> Receipt Of The New Button and Updates </h3> </center>
+        </xpath>
+
+        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace">
+            <div> </div>
+        </xpath>
+    </t>
+</templates>
